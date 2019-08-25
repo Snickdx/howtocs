@@ -1,0 +1,81 @@
+site_name: How to CS
+site_author: Nicholas Mendez
+site_description: 'A Material Design theme for MkDocs'
+# site_url: 
+
+## Repository
+repo_name: Algo-Reference
+repo_url: https://github.com/Snickdx/howtocs
+
+theme: 
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'deep purple'
+    accent: 'lime'
+    logo:
+      icon: 'school'
+    feature:
+      tabs: false
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+
+pages:
+  - Introduction: index.md
+
+  # Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+
+# Extensions
+# markdown_extensions:
+#   - admonition
+#   - toc(permalink=true)
+#   - pymdownx.arithmatex
+#   - pymdownx.betterem(smart_enable=all)
+#   - pymdownx.caret
+#   - pymdownx.critic
+#   - pymdownx.emoji:
+#       emoji_generator: !!python/name:pymdownx.emoji.to_svg
+#   - pymdownx.inlinehilite
+#   - pymdownx.magiclink
+#   - pymdownx.mark
+#   - pymdownx.smartsymbols
+#   - pymdownx.superfences
+#   - pymdownx.tasklist(custom_checkbox=true)
+#   - pymdownx.tilde
+
+# Options
+extra:
+  version: 0.2.0
+  manifest: 'manifest.json'
+  logo: assets/images/android-icon-192x192.png
+  social:
+    - type: 'github'
+      link: 'https://github.com/snickdx'
+    - type: 'twitter'
+      link: 'https://twitter.com/snickdx'
+    - type: 'linkedin'
+      link: 'https://linkedin.com/in/snickdx'
+  github:
+    download_release: true
+
+
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    - 'js/register.js'
+
+
+extra_css:
+    - assets/stylesheets/extra.css
+
+
+# Copyright
+copyright: 'Copyright &copy; 2019 Nicholas Mendez'
