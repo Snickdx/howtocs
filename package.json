@@ -1,0 +1,30 @@
+{
+  "name": "csapp",
+  "version": "1.0.0",
+  "description": "A guide for Computer Science undergrads.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"mkdocs build",
+    "serve": "mkdocs serve",
+    "deploy": "firebase deploy --only hosting"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snickdx/howtocs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Snickdx/howtocs/issues"
+  },
+  "homepage": "https://github.com/Snickdx/howtocs#readme",
+  "devDependencies": {
+    "workbox-build": "^4.3.1",
+    "workbox-cli": "^4.3.1"
+  }
+}
